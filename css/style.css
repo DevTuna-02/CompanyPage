@@ -40,6 +40,10 @@ padding:0;
 .logo{
 	float:left;
 }
+.logo-text{
+  color: #FFF;
+  font-weight: bold;
+}
 .top-nav{
 	float:right;
 	margin-right:0em;
@@ -163,7 +167,7 @@ nav#cbp-spmenu-s2 h3 {
 .feature-grid p{
 	font-size:1em;
 	font-weight:500;
-	color:#3d3946;
+	color:#524f58;
 	width:80%;	
 	line-height:1.3em;
 }
@@ -361,6 +365,23 @@ nav#cbp-spmenu-s2 h3 {
   margin-top: 9px;
   font-weight: 400;
 }
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-info div {
+  width: 45%;
+  margin: 10px;
+  text-align: left;
+}
+.copyright{
+  text-align: center;
+}
+
 /*--responsive--*/
 @media (max-width: 1366px){
 .landing-info {
@@ -785,4 +806,5 @@ button#showRightPush {
   font-size: 0.8em;
   text-align:center;
 }
+
 }
