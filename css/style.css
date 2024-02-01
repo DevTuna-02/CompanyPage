@@ -157,6 +157,7 @@ nav#cbp-spmenu-s2 h3 {
 .feature-grid{
 	padding:0px 0 10px 140px;
 	margin-bottom:4em;
+  min-height:130px;
 }
 .feature-grid h3{
 	font-size:1.7em;
@@ -358,8 +359,9 @@ nav#cbp-spmenu-s2 h3 {
 }
 .footer{
 	padding:2em 0;
+  background-color: #0f091c;
 }
-.footer p {
+.footer p,a {
   color: #B3B3B3;
   font-size:1.3em;
   margin-top: 9px;
@@ -369,15 +371,52 @@ nav#cbp-spmenu-s2 h3 {
 .contact-info {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
   margin-top: 20px;
 }
-
-.contact-info div {
-  width: 45%;
-  margin: 10px;
-  text-align: left;
+.contact-info h2{
+  color: #1ce4ef;
 }
+.footer-logo h2{
+  color: white;
+}
+.footer-info p{
+  max-width: 420px;
+}
+.form-container {
+  display: flex;
+  min-width: 30%;
+  flex-direction: column;
+}
+.form-container h2{
+  margin-bottom: 9px;
+}
+.form-container form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.form-container form button{
+  align-self: flex-start;
+}
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .copyright{
   text-align: center;
 }
@@ -462,6 +501,16 @@ nav#cbp-spmenu-s2 h3 {
 }
 .subscribe form {
   margin: 0 30px;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin-top: 20px;
+}
+.contact-info>*{
+ width: 100%;
+ margin-bottom: 1.5em;
 }
 }
 @media (max-width:768px){
